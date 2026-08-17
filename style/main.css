@@ -1,0 +1,110 @@
+/** 猫猫的简陋CSS */
+h1 {
+    font-size: 300%;
+}
+
+.p_size {
+    font-size: 180%;
+    margin: 5px 0;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(135deg, #55FFFF, #FFFFFF);
+    font-family: 'JetBrains Mono Nerd Font', monospace;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #55FFFF, #00AAAA);
+    color: #FFE;
+    font-size: 18px; /* 像素 */
+    font-weight: bolder;
+    padding: 65px, 17px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 8px 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #44DDDD, #008888);
+    transform: scale(1.01);
+}
+
+.terminal-box {
+    background-color: #1E1E2E;
+    color: #CDD6F4;
+    font-family: 'JetBrains Mono Nerd Font', monospace;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 2px solid #1E1E2E;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: left;      /* 框内整体左对齐 */
+    margin-bottom: 25px;   /* 和按钮保持距离 */
+}
+
+/* 框内的标题（居中） */
+.terminal-title {
+    color: #CDD6F4;
+    font-size: 24px;
+    text-align: center;    /* 👈 居中 */
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #CDD6F4;  /* 加一条虚线分隔标题和内容，更终端风 */
+}
+
+.terminal-title-l {
+    color: #CDD6F4;
+    font-size: 24px;
+    text-align: left;    /* 👈 居中 */
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #CDD6F4;  /* 加一条虚线分隔标题和内容，更终端风 */
+}
+
+/* 框内的段落（左对齐） */
+.terminal-box p {
+    margin: 12px 0;
+    line-height: 0.7;
+    font-size: 16px;
+    text-align: left;      /* 👈 左对齐 */
+}
+
+.p_size {
+    font-size: 180%;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.t-link {
+    text-decoration: none;
+}
+
+.top-title {
+    position: fixed;
+    top: 0;                  /* 紧贴顶部 */
+    left: 50%;               /* 从左边开始50%位置 */
+    transform: translateX(-50%); /* 往左挪自身宽度的一半，实现完美居中 */
+    font-size: 48px;
+    padding: 15px 30px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;            /* 确保在其他元素上面 */
+    margin: 0;
+}
+
+@font-face {
+    font-family: "JetBrains Mono Nerd";
+    src: url("https://cdn.jsdelivr.net/gh/Nick2bad4u/nerd-fonts-woff2@v1.0.0/fonts/woff2/JetBrainsMono/JetBrainsMonoNerdFont-Regular.woff2") format("woff2");
+    font-display: swap; /* 优化加载体验 */
+}
